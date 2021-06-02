@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Futura</title>
+<meta name="generator" content="WYSIWYG Web Builder 16 - http://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="font-awesome.min.css" rel="stylesheet">
+<link href="Futura.css" rel="stylesheet">
+<link href="page3.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="popper.min.js"></script>
+<script src="util.min.js"></script>
+<script src="collapse.min.js"></script>
+<script src="dropdown.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $("a[href*='#header']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_header').offset().top }, 600, 'easeOutCirc');
+   });
+   $('#ThemeableMenu1 .dropdown-toggle').dropdown({popperConfig:{placement:'bottom-start',modifiers:{computeStyle:{gpuAcceleration:false}}}});
+   $(document).on('click','.ThemeableMenu1-navbar-collapse.show',function(e)
+   {
+      if ($(e.target).is('a') && ($(e.target).attr('class') != 'dropdown-toggle')) 
+      {
+         $(this).collapse('hide');
+      }
+   });
+   $("a[href*='#about']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#about').offset().top-50 }, 600, 'easeInQuad');
+   });
+});
+</script>
+</head>
+<body>
+<div id="wb_header">
+<div id="header">
+<div class="row">
+<div class="col-1">
+<div id="wb_Breadcrumb1" style="display:inline-block;width:100%;z-index:0;vertical-align:top;">
+<ul id="Breadcrumb1">
+<li><a href="">Futura Client</a></li>
+</ul>
+
+</div>
+</div>
+<div class="col-2">
+<div id="wb_ThemeableMenu1" style="display:inline-block;width:100%;z-index:1;">
+<div id="ThemeableMenu1" class="ThemeableMenu1" style="width:100%;height:auto !important;">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".ThemeableMenu1-navbar-collapse">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+<div class="ThemeableMenu1-navbar-collapse collapse">
+<ul class="nav navbar-nav">
+<li class="nav-item">
+<a href="./index.html#home" class="nav-link">主页</a>
+</li>
+<li class="nav-item">
+<a href="./page1.html" class="nav-link">介绍</a>
+</li>
+<li class="nav-item">
+<a href="./page2.html" class="nav-link">更新日志</a>
+</li>
+<li class="nav-item">
+<a href="./page3.html" class="nav-link">下载Futura</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="about" style="position:relative;text-align:center;width:100%;height:522px;float:left;clear:left;display:block;z-index:6;">
+<div id="about_Container" style="width:1693px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+<div id="wb_Text3" style="position:absolute;left:499px;top:300px;width:695px;height:37px;text-align:center;z-index:2;">
+<span style="color:#FFFFFF;font-family:微软雅黑;font-size:21px;">免费下载</span><span style="color:#FFFFFF;font-family:Calibri;font-size:21px;">Futura</span></div>
+<div id="wb_Image1" style="position:absolute;left:719px;top:125px;width:254px;height:145px;z-index:3;">
+<img src="images/logoFutura.png" id="Image1" alt=""></div>
+<div id="wb_Shape2" style="position:absolute;left:765px;top:349px;width:163px;height:39px;z-index:4;">
+<a href="https://futura-1305981551.cos.ap-nanjing.myqcloud.com/Futura.exe"><img class="hover" src="images/img0002_hover.png" alt="" style="border-width:0;width:163px;height:39px;"><span class="default"><img src="images/img0002.png" id="Shape2" alt="" style="width:163px;height:39px;"></span></a></div>
+</div>
+</div>
+</body>
+</html>
